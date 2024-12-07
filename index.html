@@ -61,11 +61,19 @@
     </script>
   </head>
   <body>
-    <header class="min-h-screen w-full bg-d-image-header bg-cover bg-no-repeat">
+    <header class="min-h-screen w-full bg-cover bg-center bg-m-image-header md:bg-d-image-header">
+
       <nav class="flex justify-between items-center  px-8 py-6">
+
         <img src="./images/logo.svg" alt="" srcset="" />
-        <div class="flex items-center gap-10">
-          <ul class="flex justify-between gap-10 items-center text-white">
+        <button class="flex items-center lg:hidden" id="menu-toggle">
+          <img src="./images/icon-hamburger.svg" alt="menu">
+        </button>
+        <!--menu -->
+        <div
+          class="flex items-center gap-10 lg:flex-row flex-col lg:gap-10 absolute lg:relative bg-black lg:bg-transparent inset-0 lg:inset-auto p-8 lg:p-0 gap-6 lg:flex lg:items-center hidden"
+          id="menu"
+        >          <ul class="flex justify-between gap-10 items-center text-white">
             <li class="hover:underline hover: font[600]">
               <a href="#">Home</a>
             </li>
@@ -86,5 +94,211 @@
           <img src="./images/icon-arrow-down.svg" alt="">
         </div>
       </header>
-  </body>
+      <div class="grid md:grid-cols-2">
+        <div class="flex flex-col justify-center p-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Transform your brand</h2>
+          <p class="text-gray-600 mb-6">
+            We are a full-service creative agency specializing in helping brands grow
+            fast. Engage your clients through compelling visuals that do most of the
+            marketing for you.
+          </p>
+          <a href="#" class=" font-semibold underline uppercase">LEARN MORE</a>
+        </div>
+        <div>
+          <img src="./images/desktop/image-transform.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+
+
+      </div>
+
+      <div class="grid md:grid-cols-2">
+        <div>
+          <img src="./images/desktop/image-stand-out.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+
+        <div class="flex flex-col justify-center p-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Stand out to the right audienc</h2>
+          <p class="text-gray-600 mb-6">
+            Using a collaborative formula of designers, researchers, photographers,
+            videographers, and copywriters, we’ll build and extend your brand in
+            digital places.
+          </p>
+          <a href="#" class=" font-semibold underline uppercase">LEARN MORE</a>
+        </div>
+      
+      </div>
+      <div class="grid md:grid-cols-2">
+        <div><img src="./images/desktop/image-graphic-design.jpg" alt="" class="w-full object-cover"></div>
+        <div><img src="./images/desktop/image-photography.jpg" alt="" class="w-full object-cover"></div>
+
+      </div>
+      <div class="bg-gray-50 py-36 px-10">
+        <!-- tracking-wide  espace les lettres des mots "exemple: tracking-[0.5rem]"-->
+        <h2 class="text-center text-lg font-bold tracking-[0.4rem] text-gray-600 uppercase mb-12" >CLIENT TESTIMONIALS</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+    <div class="text-center flex flex-col gap-8 px-10"> 
+    <!-- image et texte de Emely-->
+    <img src="./images/image-emily.jpg" alt="" class="h-24 w-24 rounded-full mx-auto mb-6">
+
+    <p class="text-gray-600 font-semibold opacity-60 text-lg">
+      We put our trust in Sunnyside and they <br>delivered, making sure our needs
+      were met <br> and deadlines were always hit.
+    </p>
+    <div>
+      <h3 class="text-gray-600 font-bold text-xl">Emely R</h3>
+      <p class="text-gray-400 font-meduim text-sm">Marketing Director
+      </p>
+    </div>
+
+  </div>
+
+  <div class="text-center flex flex-col gap-8 px-10"> 
+    <!-- image et texte de Emely-->
+    <img src="./images/image-thomas.jpg" alt="" class="h-24 w-24 rounded-full mx-auto mb-6">
+
+    <p class="text-gray-600 font-semibold opacity-60 text-lg">
+      Sunnyside’s enthusiasm coupled with their <br> keen interest in our brand’s
+        success made it <br> a satisfying and enjoyable experience.
+    </p>
+    <div>Tomas S</h3>
+      <p class="text-gray-400 font-meduim text-sm"> Chief Operating Officer
+      </p>
+    </div>
+
+  </div>
+
+  <div class="text-center flex flex-col gap-8 px-10"> 
+    <!-- image et texte de Emely-->
+    <img src="./images/image-jennie.jpg" alt="" class="h-24 w-24 rounded-full mx-auto mb-6">
+
+    <p class="text-gray-600 font-semibold opacity-60 text-lg">
+      Incredible end result! Our sales increased over 400% when we worked with
+        Sunnyside. Highly recommended!
+    </p>
+    <div>
+      <h3 class="text-gray-600 font-bold text-xl">Jennie F</h3>
+      <p class="text-gray-400 font-meduim text-sm">Marketing Director
+      </p>
+    </div>
+
+  </div>
+
+  </div>
+  </div>
+
+  <div class="grid sm:grid-cols-2 md:grid-cols-4">
+    <picture>
+      <source
+        srcset="./images/mobile/image-gallery-milkbottles.jpg"
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="./images/desktop/image-gallery-milkbottles.jpg"
+        media="(min-width: 768px)"
+      />
+      <img
+        src="./images/desktop/image-gallery-milkbottles.jpg"
+        alt="Image 1"
+        class="w-full h-auto object-cover"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="./images/mobile/image-gallery-orange.jpg"
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="./images/desktop/image-gallery-orange.jpg"
+        media="(min-width: 768px)"
+      />
+      <img
+        src="./images/desktop/image-gallery-orange.jpg"
+        alt="Image 2"
+        class="w-full h-auto object-cover"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="./images/mobile/image-gallery-cone.jpg"
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="./images/desktop/image-gallery-cone.jpg"
+        media="(min-width: 768px)"
+      />
+      <img
+        src="./images/desktop/image-gallery-cone.jpg"
+        alt="Image 3"
+        class="w-full h-auto object-cover"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="./images/mobile/image-gallery-sugar-cubes.jpg"
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="./images/desktop/image-gallery-sugarcubes.jpg"
+        media="(min-width: 768px)"
+      />
+      <img
+        src="./images/desktop/image-gallery-sugarcubes.jpg"
+        alt="Image 4"
+        class="w-full h-auto object-cover"
+      />
+    </picture>
+  </div>
+
+  <footer class="bg-teal-300 text-center py-12">
+    <h2 class="text-2xl font-bold text-teal-700 mb-6">sunnyside</h2>
+    <nav class="mb-6">
+      <ul class="flex justify-center space-x-6 text-teal-700 font-medium">
+        <li><a href="#" class="hover:underline">About</a></li>
+        <li><a href="#" class="hover:underline">Services</a></li>
+        <li><a href="#" class="hover:underline">Projects</a></li>
+      </ul>
+    </nav>
+    <div class="flex justify-center space-x-6 text-teal-700">
+      <a href="#" aria-label="Facebook">
+        <img
+          src="./images/icon-facebook.svg"
+          alt="Image 4"
+          class="w-full h-auto object-cover"
+        />
+      </a>
+      <a href="#" aria-label="Instagram">
+        <img
+          src="./images/icon-instagram.svg"
+          alt="Image 4"
+          class="w-full h-auto object-cover"
+        />
+      </a>
+      <a href="#" aria-label="Twitter">
+        <img
+          src="./images/icon-twitter.svg"
+          alt="Image 4"
+          class="w-full h-auto object-cover"
+        />
+      </a>
+      <a href="#" aria-label="Pinterest">
+        <img
+          src="./images/icon-pinterest.svg"
+          alt="Image 4"
+          class="w-full h-auto object-cover"
+        />
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+  
+    menuToggle.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
 </html>
